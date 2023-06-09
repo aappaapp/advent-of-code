@@ -1,4 +1,4 @@
-const input = await Deno.readTextFile("./input.txt");
+import { input } from "./part1.ts";
 
 function calca(v: string): number {
     switch (v) {

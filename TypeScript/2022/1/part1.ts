@@ -1,4 +1,6 @@
-const input = await Deno.readTextFile("./input.txt");
+import getInput from "../../utils/getInput.ts";
+
+const input = getInput(import.meta.url);
 
 export const elfs: number[] = [];
 let currentElf = 0;

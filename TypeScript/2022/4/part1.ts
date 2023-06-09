@@ -1,4 +1,6 @@
-export const input = await Deno.readTextFile("./input.txt");
+import getInput from "../../utils/getInput.ts";
+
+export const input = getInput(import.meta.url);
 
 export type Range = [number, number];
 
